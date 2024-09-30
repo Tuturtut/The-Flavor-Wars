@@ -1,0 +1,50 @@
+body {
+  background-color: #fefae0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+
+  font-size: 10em;
+  font-family: "BodoniModa";
+}
+
+.bodoni-moda-h1 {
+  font-family: "Bodoni Moda", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  display: flex;
+  max-height: 100vh;
+  height: 100vh;
+}
+
+#title {
+  align-self: center;
+  width: 33%;
+  line-height: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Step 1: Set up the body (no global background) */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling when the div expands */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#drop-down-indicator {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+}
