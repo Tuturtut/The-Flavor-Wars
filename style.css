@@ -200,9 +200,6 @@ li {
 }
 
 .chef-title {
-  color: #283618;
-}
-.chef-display h1 {
   align-self: center;
 }
 
@@ -213,7 +210,6 @@ li {
 
 aside {
   flex: 1;
-  border: 1px solid #283618;
   transition: 200ms ease;
   padding: 2em;
   display: flex;
@@ -243,9 +239,7 @@ aside img {
   cursor: pointer;
   text-align: center;
   width: 100%;
-  background-color: #283618;
   color: #fefae0;
-  border: 1px solid #283618;
   transition: 500ms ease;
 }
 
@@ -255,19 +249,47 @@ aside img {
   transition: max-height 500ms ease-out; /* Animates the height change */
   display: flex;
 }
-
-.country-item h1 {
-  border-bottom: 1px solid #283618;
-}
-
-.country-item:hover {
-  background-color: #fefae0;
+.chef-1 .chef-title {
   color: #283618;
 }
 
-.country-selected {
-  background-color: #fefae0;
+.chef-2 .chef-title {
+  color: #bc6c25;
+}
+
+.chef-1 .content .countries-list .country-item:hover,
+.chef-1 .content .countries-list .country-selected {
   color: #283618;
+}
+.chef-2 .content .countries-list .country-item:hover,
+.chef-2 .content .countries-list .country-selected {
+  color: #bc6c25;
+}
+
+.chef-1 .content .countries-list .country-item {
+  background-color: #283618;
+}
+.chef-2 .content .countries-list .country-item {
+  background-color: #bc6c25;
+}
+
+.chef-1 .content .countries-list .country-selected,
+.chef-2 .content .countries-list .country-selected,
+.chef-1 .content .countries-list .country-item:hover,
+.chef-2 .content .countries-list .country-item:hover {
+  background-color: #fefae0;
+}
+
+.chef-1 .content aside,
+.chef-1 .content .countries-list .country-item h1,
+.chef-1 .content .countries-list .country-item {
+  border: 1px solid #283618;
+}
+
+.chef-2 .content aside,
+.chef-2 .content .countries-list .country-item h1,
+.chef-2 .content .countries-list .country-item {
+  border: 1px solid #bc6c25;
 }
 
 .country-selected .country-content {
