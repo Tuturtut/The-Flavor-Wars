@@ -234,7 +234,6 @@ aside img {
   height: 400px;
   width: 400px;
 }
-
 .countries-list {
   flex: 2;
   transition: 200ms ease;
@@ -246,11 +245,48 @@ aside img {
   width: 100%;
   background-color: #283618;
   color: #fefae0;
-  transition: 200ms ease;
   border: 1px solid #283618;
+  transition: 500ms ease;
+}
+
+.country-item .country-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 500ms ease-out; /* Animates the height change */
+  display: flex;
+}
+
+.country-item h1 {
+  border-bottom: 1px solid #283618;
 }
 
 .country-item:hover {
   background-color: #fefae0;
   color: #283618;
+}
+
+.country-selected {
+  background-color: #fefae0;
+  color: #283618;
+}
+
+.country-selected .country-content {
+  max-height: 600px; /* Expanded height */
+}
+
+.dish-description {
+  flex: 3;
+}
+
+.dish-description p {
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.dish-img {
+  flex: 2;
+  object-fit: cover;
+  height: 400px;
 }
