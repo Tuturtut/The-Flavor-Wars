@@ -1,6 +1,6 @@
 // Get all items
 const items = document.querySelectorAll(".country-item");
-
+items[0].classList.add("country-selected");
 // Add click event listener to each item
 items.forEach((item) => {
   item.addEventListener("click", () => {

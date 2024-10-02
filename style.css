@@ -34,6 +34,13 @@ h3 {
   font-style: normal;
 }
 
+h5 {
+  font-size: 1em;
+  font-family: "Bodoni Moda", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 header {
   display: flex;
   max-height: 100vh;
@@ -220,7 +227,8 @@ aside p {
   font-size: 200%;
 
   text-align: center;
-  padding: 20%;
+  padding: auto;
+
   position: relative;
 }
 
@@ -249,51 +257,55 @@ aside img {
   transition: max-height 500ms ease-out; /* Animates the height change */
   display: flex;
 }
-.chef-1 .chef-title {
+#chef-1 .chef-title {
   color: #283618;
 }
 
-.chef-2 .chef-title {
+#chef-2 .chef-title {
   color: #bc6c25;
 }
 
-.chef-1 .content .countries-list .country-item:hover,
-.chef-1 .content .countries-list .country-selected {
+#chef-1 .content .countries-list .country-item:hover,
+#chef-1 .content .countries-list .country-selected {
   color: #283618;
 }
-.chef-2 .content .countries-list .country-item:hover,
-.chef-2 .content .countries-list .country-selected {
+#chef-2 .content .countries-list .country-item:hover,
+#chef-2 .content .countries-list .country-selected {
   color: #bc6c25;
 }
 
-.chef-1 .content .countries-list .country-item {
+#chef-1 .content .countries-list .country-item {
   background-color: #283618;
 }
-.chef-2 .content .countries-list .country-item {
+#chef-2 .content .countries-list .country-item {
   background-color: #bc6c25;
 }
 
-.chef-1 .content .countries-list .country-selected,
-.chef-2 .content .countries-list .country-selected,
-.chef-1 .content .countries-list .country-item:hover,
-.chef-2 .content .countries-list .country-item:hover {
+#chef-1 .content .countries-list .country-selected,
+#chef-2 .content .countries-list .country-selected,
+#chef-1 .content .countries-list .country-item:hover,
+#chef-2 .content .countries-list .country-item:hover {
   background-color: #fefae0;
 }
 
-.chef-1 .content aside,
-.chef-1 .content .countries-list .country-item h1,
-.chef-1 .content .countries-list .country-item {
+#chef-1 .content aside,
+#chef-1 .content .countries-list .country-item h1,
+#chef-1 .content .countries-list .country-item {
   border: 1px solid #283618;
 }
 
-.chef-2 .content aside,
-.chef-2 .content .countries-list .country-item h1,
-.chef-2 .content .countries-list .country-item {
+#chef-2 .content aside,
+#chef-2 .content .countries-list .country-item h1,
+#chef-2 .content .countries-list .country-item {
   border: 1px solid #bc6c25;
 }
 
 .country-selected .country-content {
   max-height: 600px; /* Expanded height */
+}
+
+.country-selected {
+  cursor: default;
 }
 
 .dish-description {
@@ -311,4 +323,47 @@ aside img {
   flex: 2;
   object-fit: cover;
   height: 400px;
+}
+
+footer {
+  background-color: black;
+  color: #fefae0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 0;
+  margin-top: -20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+ul {
+  padding: 0;
+}
+a {
+  font-size: 1.5em;
+  font-family: "Bodoni Moda", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+
+  text-decoration: none;
+  color: #fefae0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#copyright {
+  align-self: center;
 }
