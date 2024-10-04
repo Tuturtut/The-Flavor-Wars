@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+html {
+  margin: 0;
+}
+
 h1 {
   margin: 0;
 
@@ -326,12 +330,13 @@ aside img {
 }
 
 footer {
-  background-color: black;
+  background-color: #283618;
   color: #fefae0;
   display: flex;
   flex-direction: column;
   padding-left: 1em;
   padding-right: 1em;
+  margin: 0;
 }
 
 .subtitle {
@@ -344,8 +349,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  height: 200px;
 }
 
+.footer-section {
+  height: 100%;
+}
 ul {
   padding: 0;
 }
@@ -362,8 +371,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-#copyright {
-  align-self: center;
 }
