@@ -169,8 +169,8 @@ li {
 }
 
 .img-1 {
-  right: 200px;
   top: 100px;
+  right: 200px;
 }
 
 .img-2 {
@@ -179,8 +179,8 @@ li {
 }
 
 .img-3 {
-  left: 300px;
   top: 0px;
+  left: 300px;
 }
 
 .countries-img {
@@ -253,6 +253,7 @@ aside img {
   width: 100%;
   color: #fefae0;
   transition: 500ms ease;
+  box-sizing: border-box;
 }
 
 .country-item .country-content {
