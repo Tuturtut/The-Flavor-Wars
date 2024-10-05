@@ -1,6 +1,7 @@
 body {
   background-color: #fefae0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 html {
@@ -180,7 +181,7 @@ li {
 
 .img-3 {
   top: 0px;
-  left: 300px;
+  left: clamp(50px, 300px, calc(100vw - 250px));
 }
 
 .countries-img {
@@ -231,7 +232,7 @@ aside p {
   font-size: 200%;
 
   text-align: center;
-  padding: auto;
+  padding: 150px;
 
   position: relative;
 }
@@ -310,7 +311,7 @@ aside img {
 }
 
 .country-selected {
-  cursor: default;
+  cursor: auto;
 }
 
 .dish-description {
@@ -333,8 +334,6 @@ aside img {
 footer {
   background-color: #283618;
   color: #fefae0;
-  display: flex;
-  flex-direction: column;
   padding-left: 1em;
   padding-right: 1em;
   margin: 0;
@@ -348,14 +347,21 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: baseline;
-  height: 200px;
+  flex-wrap: wrap;
 }
 
 .footer-section {
   height: 100%;
+  z-index: 2;
+  flex: 50%;
 }
+
+#footer-links {
+  justify-self: right;
+}
+
 ul {
   padding: 0;
 }
@@ -363,7 +369,7 @@ a {
   font-size: 1.5em;
   font-family: "Bodoni Moda", system-ui;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal;
 
   text-decoration: none;
